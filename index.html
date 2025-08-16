@@ -24,12 +24,15 @@
       align-items: center;
       margin-bottom: 30px;
     }
-    .header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
+.header img {
+  width: 320px;   /* 横幅（調整可） */
+  aspect-ratio: 16 / 9;  /* 16:9 比率を強制 */
+  height: auto;   /* 高さは自動 */
+  border-radius: 0;  /* 四角のまま */
+  object-fit: cover; /* 写真をはみ出さずにトリミング */
+  margin-right: 20px;
+}
+
     .header-info h1 {
       margin: 0;
       font-size: 32px;
