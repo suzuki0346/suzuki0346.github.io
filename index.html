@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>自己紹介 - ○○研究室</title>
+  <style>
+    body {
+      font-family: "Hiragino Sans", "Meiryo", sans-serif;
+      background-color: #e8f5e9; /* 薄い緑色 */
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #66bb6a; /* 濃い緑 */
+      color: white;
+      padding: 20px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* 丸型にする */
+      object-fit: cover;
+      margin-right: 20px;
+      border: 3px solid white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .profile-info h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .profile-info p {
+      margin: 3px 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #a5d6a7;
+      padding-bottom: 5px;
+      color: #2e7d32;
+    }
+    p, li {
+      margin: 5px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #c8e6c9;
+      font-size: 0.9em;
+      color: #333;
+    }
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <!-- 👇 ここに自分の写真ファイル名を置き換える -->
+      <img src="profile.jpg" alt="プロフィール写真">
+      <div class="profile-info">
+        <h1>鈴木 開斗</h1>
+        <p>○○大学 ○○研究科 ○○研究室 修士課程</p>
+        <p>研究テーマ: ○○○○</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>略歴</h2>
+      <p>2023年4月 - ○○大学大学院 ○○研究科 入学</p>
+      <p>2021年3月 - ○○大学 ○○学部 卒業</p>
+    </section>
+
+    <section>
+      <h2>論文</h2>
+      <ul>
+        <li>著者名, 論文タイトル, 学会誌名, 年</li>
+        <li>著者名, 論文タイトル, 学会誌名, 年</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>学会発表</h2>
+      <ul>
+        <li>発表タイトル, 学会名, 年</li>
+        <li>発表タイトル, 学会名, 年</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>趣味</h2>
+      <p>読書、旅行、プログラミング</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Email: yourmail@example.com ｜ GitHub: <a href="https://github.com/username">username</a></p>
+  </footer>
+</body>
+</html>
