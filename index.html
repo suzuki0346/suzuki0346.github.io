@@ -2,123 +2,131 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>鈴木 開斗 - 研究室</title>
+  <title>自己紹介 - 鈴木 開斗</title>
   <style>
     body {
-      font-family: "Meiryo", "Arial", sans-serif; /* 日本語はメイリオ, 英語はArial */
-      background-color: #ffffff; /* 背景は白 */
+      font-family: "Meiryo", Arial, sans-serif;
+      font-size: 18px; /* デフォルトはだいたい16px */
+      background-color: #d6e9ca; /* ページ全体の薄い緑背景 */
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      padding: 40px 0; /* 上下に余白 */
+      display: flex;
+      justify-content: center;
     }
-    header {
-      background-color: #66bb6a; /* ヘッダーは明るい緑 */
-      color: white;
-      padding: 20px;
+    .container {
+      width: 800px;
+      background-color: #ffffff; /* 中身は白 */
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .profile {
+    .header {
       display: flex;
       align-items: center;
-      max-width: 800px;
-      margin: 0 auto;
+      margin-bottom: 30px;
     }
-    .profile img {
+    .header img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      object-fit: cover;
       margin-right: 20px;
-      border: 3px solid white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
-    .profile-info h1 {
+    .header-info h1 {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 32px;
+      color: #0d0015;
     }
-    .profile-info p {
-      margin: 3px 0;
+    .header-info p {
+      margin: 4px 0;
     }
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 10px;
-    }
-    section {
+    .section {
       margin-bottom: 20px;
-      padding: 15px;
-      background-color: #2e7d32; /* 濃い緑 */
-      color: white; /* 文字は白 */
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top: 0;
-      font-size: 1.4em;
-      border-bottom: none; /* 下線を消す */
+    .section-title {
+      background-color: #93b881;
+      color: white;
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 22px;   /* ← これを追加 */
+
     }
-    p, li {
-      margin: 5px 0;
+    .section-content {
+      background-color: #ffffff; /* 白背景のまま */
+      padding: 12px 15px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #c8e6c9;
-      font-size: 0.9em;
-      color: #333;
-    }
-    footer a {
-      color: #2e7d32;
-      text-decoration: none;
-    }
+.myname {
+  text-decoration: underline;
+  font-weight: bold; /* ついでに太字にしても見やすい */
+}
   </style>
 </head>
 <body>
-  <header>
-    <div class="profile">
-      <!-- 👇 自分の写真ファイル名に置き換える -->
-      <img src="profile.jpg" alt="プロフィール写真">
-      <div class="profile-info">
-        <h1>鈴木 開斗</h1>
-        <p>北海道大学 ○○研究科 先端材料化学研究室 修士課程</p>
-        <p>研究テーマ: ○○○○</p>
+  <div class="container">
+    <!-- 写真と名前 -->
+    <div class="header">
+      <img src="me.jpg" alt="プロフィール写真">
+      <div class="header-info">
+        <h1>鈴木 開斗 / Kaito SUZUKI</h1>
+        <p>北海道大学 総合化学院 先端材料化学研究室</p>
+        <p>Email: suzuki.kaito.b3[at]elms.hokudai.ac.jp</p>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section>
-      <h2>略歴</h2>
-      <p>2023年4月 - ○○大学大学院 ○○研究科 入学</p>
-      <p>2021年3月 - ○○大学 ○○学部 卒業</p>
-    </section>
+    <!-- 略歴 / Biography -->
+    <div class="section">
+      <div class="section-title">略歴</div>
+      <div class="section-content">
+        <p>2021.3. 北海道札幌月寒高等学校 卒業</p>
+        <p>2025.3. 北海道大学 工学部 応用理工系 応用化学コース 卒業</p>
+        <p>2025.4. 北海道大学大学院 総合化学院 物質化学コース 入学</p>
+      </div>
+    </div>
 
-    <section>
-      <h2>論文</h2>
-      <ul>
-        <li>著者名, 論文タイトル, 学会誌名, 年</li>
-        <li>著者名, 論文タイトル, 学会誌名, 年</li>
-      </ul>
-    </section>
+    <!-- 研究テーマ / Reserch theme -->
+    <div class="section">
+      <div class="section-title">研究テーマ</div>
+      <div class="section-content">
+        <p>静電気照射に基づく金属錯体の構造変化および発光探索</p>
+      </div>
+    </div>
 
-    <section>
-      <h2>学会発表</h2>
-      <ul>
-        <li>発表タイトル, 学会名, 年</li>
-        <li>発表タイトル, 学会名, 年</li>
-      </ul>
-    </section>
+    <!-- 学会発表 / Presentations -->
+    <div class="section">
+      <div class="section-title">学会発表</div>
+      <div class="section-content">
+        <ul>
+          <li><strong>ガラクトース骨格を持つホスフィンオキシド配位子を用いたEu(III)錯体の合成と光物性</strong>
+　　　　　<p>〇<span class="myname">鈴木 開斗</span>, 榎戸 雅基, ワン メンフィ, 北川 裕一, 三浦 佳子, 長谷川 靖哉</p>
+          <p>日本化学会第105春季年会, A503-4pm-07, 関西大学 千里山キャンパス, 2025.3.29.</p>
+          </li>
+</ul>
+<br>
+<ul>
 
-    <section>
-      <h2>趣味</h2>
-      <p>読書、旅行、プログラミング</p>
-    </section>
-  </main>
+          <li><strong>静電気励起による金属錯体の発光機構探索</strong>
+　　　　　<p>〇<span class="myname">鈴木 開斗</span>, 稲毛 康太, 吉田 将己, ワン メンフィ, 長谷川 靖哉, 北川 裕一</p>
+          <p>第36回配位化合物の光化学討論会, P-37, 高知プリンスホテル, 2025.8.6.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <footer>
-    <p>Email: yourmail@example.com ｜ GitHub: <a href="https://github.com/username">username</a></p>
-  </footer>
+    <!-- 論文 / Publications -->
+    <div class="section">
+      <div class="section-title">論文</div>
+      <div class="section-content">
+        <ul>
+          <p>coming soon</p>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 趣味 / Hobbies -->
+    <div class="section">
+      <div class="section-title">趣味</div>
+      <div class="section-content">
+        <p>散歩、生き物観察、甘いものを食べること</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
